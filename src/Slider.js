@@ -92,7 +92,7 @@ class Slider extends Component{
         title={images[currentIndex].title}/>
 
     const nextThumb =
-      <div>
+      <div className="element">
         <div className="buffer"></div>
 
       <Picture
@@ -103,7 +103,8 @@ class Slider extends Component{
       </div>
 
     const currentThumb =
-      <div onClick={this.hideShowFullPictureModal}>
+      <div onClick={this.hideShowFullPictureModal}
+         className="element">
         <Picture
         className="thumb"
         src={images[currentIndex].thumb}
@@ -113,7 +114,7 @@ class Slider extends Component{
       </div>
 
     const prevThumb =
-      <div>
+      <div className="element">
         <div className="buffer"></div>
         <Picture
         className={"thumb " + backAnimation}
